@@ -1,0 +1,18 @@
+
+<VirtualHost *:80>
+
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/web
+
+    <Directory /var/www/web>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog /dev/stdout
+    CustomLog /dev/stdout combined
+
+</VirtualHost>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet

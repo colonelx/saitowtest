@@ -1,0 +1,16 @@
+{
+	"name": "colonelx/saitow",
+	"version": "0.0.1",
+	"autoload": {
+		"psr-4": {
+			"Saitow\\": "app"
+		}
+	},
+	"require": {
+		"slim/slim": "^3.0",
+        "slim/twig-view": "^2.2",
+        "vlucas/phpdotenv": "^2.4",
+		"monolog/monolog": "^1.23"
+
+	}
+}
