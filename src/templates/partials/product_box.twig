@@ -1,0 +1,5 @@
+<li class="product_box">
+    <a href="/item/{{ item.id }}"><img src="{{ item.image }}" class="box_img"/></a>
+    <h3><a href="/item/{{ item.id }}">{{ item.title }}</a></h3>
+    &euro; {{ item.price|number_format(2, '.', ',') }}
+</li>

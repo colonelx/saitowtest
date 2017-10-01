@@ -1,10 +1,14 @@
 {% extends "_html.twig" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Search{% endblock %}
 
 {% block main %}
     <div class="toolbar">
-        {% include 'partials/filter.twig' %}
+        {% include 'partials/filter.twig' with {
+        'orderByOptions': orderByOptions,
+        'term': searchTerm,
+        'orderBy': orderBy
+        } %}
     </div>
     <div class="product_area">
         <ul class="tires">
@@ -21,7 +25,9 @@
                             {% if link['active'] %}
                                 <span class="current">{{ link['name'] }}</span>
                             {% else %}
-                                <a href="/home/{{ link['link_suffix'] }}">{{ link['name'] }}</a>
+                                <a href="/search/{{ searchTerm }}/{{ link['link_suffix'] }}">
+                                    {{ link['name'] }}
+                                </a>
                             {% endif %}
                         </li>
                     {% endfor %}

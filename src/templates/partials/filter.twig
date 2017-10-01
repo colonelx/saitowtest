@@ -1,0 +1,17 @@
+<form id="search_form">
+    <label for="searchTerm">Search:</label>
+    <input type="text" id="searchTerm" value="{{ term }}" />
+
+    <input type="button" id="searchBtn" value="Search"/>
+</form>
+{% if orderBy is defined %}
+<form id="order_form" method="POST" action="/changeOrder">
+    <label for="orderBy">Order By:</label>
+    <select id="orderBy" name="orderBy">
+        {% for option in orderByOptions %}
+            <option {{ option == orderBy ? ' selected ' : '' }} value="{{ option }}">{{ option }}</option>
+        {% endfor %}
+    </select>
+</form>
+{% endif %}
+<div class="clearfix"></div>

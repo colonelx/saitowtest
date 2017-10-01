@@ -4,22 +4,20 @@
 <link href="/css/style.css" rel="stylesheet" type="text/css" />
 <body>
     <header>
-        {% if is_logged == true %}
         <ul class="nav">
-            <li><a href="/app/">Home</a></li>
-            <li><a href="/app/assets">Search</a></li>
+            <li><a href="/home/">Home</a></li>
         </ul>
-        {% endif %}
         <div class="clearfix"></div>
     </header>
 
     <div class="main">
-        <h1>{{ block('title') }}</h1>
+
         {{ block('main') }}
     </div>
 
     <footer>
         &copy; 2017 Viktor Panteleev for Saitow AG
     </footer>
+    <script type="text/javascript" src="/js/filter.js"></script>
 </body>
 </html>

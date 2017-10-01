@@ -1,0 +1,20 @@
+{% extends "_html.twig" %}
+
+{% block title %}{{ item.title }}{% endblock %}
+
+{% block main %}
+    <div class="toolbar">
+        {% include 'partials/filter.twig' with { 'orderByOptions': orderByOptions } %}
+    </div>
+    <article>
+        <h1>{{ item.title }}</h1>
+        <div class="image">
+            <img src="{{ item.image }}" />
+        </div>
+        <div class="information">
+            Price: <span class="price">&euro; {{ item.price|number_format(2,'.',',') }}</span> <br/>
+            <div class="additional">{{ item.description }}</div>
+        </div>
+        <div class="clearfix"></div>
+    </article>
+{% endblock %}
