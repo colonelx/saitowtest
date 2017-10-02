@@ -6,16 +6,27 @@ use Saitow\Library\TiresDataSourceInterface;
 use Saitow\Library\TiresDataSource;
 use Saitow\Model\Tire;
 
+/**
+ * Class TiresSqlDataSource
+ * @package Saitow\Library\TiresDataSources
+ */
 class TiresSqlDataSource implements TiresDataSourceInterface
 {
     private $db;
     private $tableName = 'tires';
 
+    /**
+     * TiresSqlDataSource constructor.
+     * @param $filePath
+     */
     public function __construct($filePath)
     {
         $this->db = new \SQLite3($filePath);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getAll($searchTerm = '')
     {
         $results = [];
@@ -39,6 +50,9 @@ class TiresSqlDataSource implements TiresDataSourceInterface
         return $results;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getById($id)
     {
         $statement = $this->db->prepare(sprintf('SELECT * FROM %s WHERE id = :id', $this->tableName));
@@ -55,6 +69,9 @@ class TiresSqlDataSource implements TiresDataSourceInterface
         return $tire;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getDataSourceType()
     {
         return TiresDataSource::TYPE_SQL;

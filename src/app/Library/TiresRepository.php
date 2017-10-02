@@ -4,16 +4,47 @@ namespace Saitow\Library;
 
 use Saitow\Exceptions\TiresRepositoryException;
 
+/**
+ * Class TiresRepository
+ * Acts as a controller for the DataSources operations.
+ * @package Saitow\Library
+ */
 class TiresRepository
 {
     private $dataSources;
 
+    /**
+     * TiresRepository constructor.
+     * @param $dataSources
+     */
     public function __construct($dataSources)
     {
         $this->dataSources = $dataSources;
     }
 
-    public function query($operation, $args)
+    /**
+     * Overwrite the call method of the class
+     * @param $operation
+     * @param $args
+     * @return null|ArrayList
+     */
+    public function __call($operation, $args)
+    {
+        try {
+            return $this->query($operation, $args);
+        } catch (TiresRepositoryException $e) {
+            throw new \BadMethodCallException(sprintf('Undefined operation called: "%s"', $operation));
+        }
+    }
+
+    /**
+     * Invocation with error handling of the DataLoader
+     * @param $operation
+     * @param $args
+     * @return null|ArrayList
+     * @throws TiresRepositoryException
+     */
+    private function query($operation, $args)
     {
         $dataLoader = new TiresDataLoader($this);
 
@@ -33,15 +64,10 @@ class TiresRepository
         }
     }
 
-    public function __call($operation, $args)
-    {
-        try {
-            return $this->query($operation, $args);
-        } catch (TiresRepositoryException $e) {
-            throw new \BadMethodCallException(sprintf('Undefined operation called: "%s"', $operation));
-        }
-    }
-
+    /**
+     * Returns the list of all defined Data Source providers.
+     * @return ArrayList<TiresDataSourceInterface>
+     */
     public function getDataSources()
     {
         return $this->dataSources;

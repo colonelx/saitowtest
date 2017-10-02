@@ -2,6 +2,11 @@
 
 namespace Saitow\Library;
 
+/**
+ * Class TiresDataSource
+ * Consists of couple of declarations.
+ * @package Saitow\Library
+ */
 abstract class TiresDataSource
 {
     const TYPE_SQL = 'sql';

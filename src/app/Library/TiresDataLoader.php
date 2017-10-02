@@ -2,19 +2,31 @@
 
 namespace Saitow\Library;
 
-
 use Saitow\Exceptions\TiresNotFoundException;
 use Slim\Exception\NotFoundException;
 
+/**
+ * Class TiresDataLoader
+ * @package Saitow\Library
+ */
 class TiresDataLoader
 {
     private $dataManager;
 
+    /**
+     * TiresDataLoader constructor.
+     * @param $dataManager
+     */
     public function __construct($dataManager)
     {
         $this->dataManager = $dataManager;
     }
 
+    /**
+     * Call the getAll() method of all DataSource providers.
+     * @param string $searchTerm
+     * @return array
+     */
     public function all($searchTerm = '')
     {
         $tires = [];
@@ -25,6 +37,13 @@ class TiresDataLoader
         return $tires;
     }
 
+    /**
+     * Fetches a single record from a given DataSource provider.
+     * @param string $dataSourceName - Unique string name of the Data Source provider.
+     * @param int $id - refId or ID within the Data Source.
+     * @return null/Tire
+     * @throws TiresNotFoundException
+     */
     public function get($dataSourceName, $id)
     {
         $item = null;

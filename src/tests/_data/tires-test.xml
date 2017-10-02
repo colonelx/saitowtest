@@ -1,0 +1,20 @@
+<tires>
+	<tire>
+		<id>1</id>
+		<manufacturer>MANUFACTURER</manufacturer>
+		<name>TIRE_NAME</name>
+		<additional>additional</additional>
+		<price>12.34</price>
+		<availability>1</availability>
+		<product_image>picture_url</product_image>
+	</tire>
+	<tire>
+		<id>2</id>
+		<manufacturer>MANUFACTURER_2</manufacturer>
+		<name>TIRE_NAME_2</name>
+		<additional>additional</additional>
+		<price>11.11</price>
+		<availability>2</availability>
+		<product_image>picture_url</product_image>
+	</tire>
+</tires>

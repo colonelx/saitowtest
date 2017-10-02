@@ -1,0 +1,200 @@
+{
+    "event": "suiteStart",
+    "suite": "unit",
+    "tests": 15
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "PaginatorTest::testPaginatorLinksSecondPage"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "PaginatorTest::testPaginatorLinksSecondPage",
+    "status": "pass",
+    "time": 0.0043799877166748047,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "PaginatorTest::testPaginatorLinksFirstPage"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "PaginatorTest::testPaginatorLinksFirstPage",
+    "status": "pass",
+    "time": 0.0002040863037109375,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "PaginatorTest::testPaginatorLinksLastPage"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "PaginatorTest::testPaginatorLinksLastPage",
+    "status": "pass",
+    "time": 0.0007419586181640625,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresCollectionSorterTest::testSortByTitle"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresCollectionSorterTest::testSortByTitle",
+    "status": "pass",
+    "time": 0.00095510482788085938,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresCollectionSorterTest::testSortByPrice"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresCollectionSorterTest::testSortByPrice",
+    "status": "pass",
+    "time": 0.00022292137145996094,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresDataLoaderTest::testLoaderAll"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresDataLoaderTest::testLoaderAll",
+    "status": "pass",
+    "time": 0.00074005126953125,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresDataLoaderTest::testLoaderSingle"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresDataLoaderTest::testLoaderSingle",
+    "status": "pass",
+    "time": 0.00058603286743164062,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetDataSourceType"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetDataSourceType",
+    "status": "pass",
+    "time": 0.0011179447174072266,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetById"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetById",
+    "status": "pass",
+    "time": 0.00053310394287109375,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetAll"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetAll",
+    "status": "pass",
+    "time": 0.00041604042053222656,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetAllWithNameFilter"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresSqlDataSourceTest::testGetAllWithNameFilter",
+    "status": "pass",
+    "time": 0.00038504600524902344,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetDataSourceType"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetDataSourceType",
+    "status": "pass",
+    "time": 0.00040102005004882812,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetById"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetById",
+    "status": "pass",
+    "time": 0.00055193901062011719,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetAll"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetAll",
+    "status": "pass",
+    "time": 0.000370025634765625,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetAllWithNameFilter"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "TiresXmlDataSourceTest::testGetAllWithNameFilter",
+    "status": "pass",
+    "time": 0.00028014183044433594,
+    "trace": [],
+    "message": "",
+    "output": ""
+}

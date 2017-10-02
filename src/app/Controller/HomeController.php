@@ -8,9 +8,14 @@ use Saitow\Library\TiresDataSource;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
+/**
+ * Class HomeController
+ * @package Saitow\Controller
+ */
 class HomeController extends BaseController
 {
     /**
+     * Url'/home/'
      * @param Request $request
      * @param Response $response
      * @param $args
@@ -36,6 +41,12 @@ class HomeController extends BaseController
         ]);
     }
 
+    /**
+     * Url '/search/{string}'
+     * @param Request $request
+     * @param Response $response
+     * @param $args
+     */
     public function searchAction(Request $request, Response $response, $args)
     {
         $orderBy = $_SESSION['orderBy'];
@@ -61,6 +72,12 @@ class HomeController extends BaseController
         ]);
     }
 
+    /**
+     * Url '/changeOrder'
+     * @param Request $request
+     * @param Response $response
+     * @return static
+     */
     public function changeOrderAction(Request $request, Response $response)
     {
         $orderBy = $request->getParsedBodyParam('orderBy');
@@ -70,6 +87,12 @@ class HomeController extends BaseController
         return $response->withRedirect($returnUrl);
     }
 
+    /**
+     * Url '/item/{dataSource}_{id}'
+     * @param Request $request
+     * @param Response $response
+     * @param $args
+     */
     public function itemAction(Request $request, Response $response, $args)
     {
         try {

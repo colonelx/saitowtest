@@ -1,0 +1,17 @@
+TAP version 13
+ok 1 - PaginatorTest::testPaginatorLinksSecondPage
+ok 2 - PaginatorTest::testPaginatorLinksFirstPage
+ok 3 - PaginatorTest::testPaginatorLinksLastPage
+ok 4 - TiresCollectionSorterTest::testSortByTitle
+ok 5 - TiresCollectionSorterTest::testSortByPrice
+ok 6 - TiresDataLoaderTest::testLoaderAll
+ok 7 - TiresDataLoaderTest::testLoaderSingle
+ok 8 - TiresSqlDataSourceTest::testGetDataSourceType
+ok 9 - TiresSqlDataSourceTest::testGetById
+ok 10 - TiresSqlDataSourceTest::testGetAll
+ok 11 - TiresSqlDataSourceTest::testGetAllWithNameFilter
+ok 12 - TiresXmlDataSourceTest::testGetDataSourceType
+ok 13 - TiresXmlDataSourceTest::testGetById
+ok 14 - TiresXmlDataSourceTest::testGetAll
+ok 15 - TiresXmlDataSourceTest::testGetAllWithNameFilter
+1..15
