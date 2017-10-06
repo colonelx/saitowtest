@@ -5,7 +5,7 @@ You may either run this project on your own environment or use Docker to run it.
 
 ## Requerements
 
- - PHP >= 5.4
+ - PHP >= 5.6
  - Composer (https://getcomposer.org/)
  - A web server (eg. Apache / nginx)
  
